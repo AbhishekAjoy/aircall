@@ -5,10 +5,14 @@ html, body, h1, h2, h3, ul, li {
   font: inherit;
   font-size: 100%;
 }
-
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src:  url('../../assets/Poppins-Medium.ttf');
+}
 body {
   background: #233142;
-  font-family: helvetica, arial, sans-serif;
+  font-family: Poppins sans-serif;
   font-size: 13px;
   color: #333333;
   line-height: 1;

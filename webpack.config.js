@@ -17,6 +17,10 @@ module.exports = {
         use: [ 'style-loader', 'css-loader' ]
       },
       {
+        test: /\.(woff|woff2|ttf|eot)$/,
+        use: 'file-loader?name=fonts/[name].[ext]!static'
+       },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
