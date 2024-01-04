@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faSliders} from '@fortawesome/free-solid-svg-icons';
+
 
 const Header = () => {
   return (
@@ -19,6 +22,12 @@ const Header = () => {
         </g>
       </svg>
       <pre> Activity</pre>
+      <div className="triangle_bottom_left"></div>
+      <span className="rect">
+        <button>Inbox</button>
+        <button>All calls</button>
+        <button id = "settings-slider-icon"><FontAwesomeIcon icon={faSliders} /></button>
+      </span>
     </header>
   );
 };

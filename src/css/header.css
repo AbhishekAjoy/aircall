@@ -1,17 +1,21 @@
+:root{
+  --light-grey: #ecececf0;
+}
 @font-face {
   font-family: 'Poppins';
   src:  url('../../assets/Poppins-Medium.ttf');
 }
 header {
-  height: 40px;
+  height: 80px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  padding: 20px 0;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
+
+
 pre{
   font-family: Poppins sans-serif;
   font-size: 1.2em;
@@ -20,4 +24,37 @@ pre{
 header svg {
   display: block;
   width:40px;
+}
+.triangle_bottom_left {
+  width: 0;
+  height: 0;
+  margin-top: 5px;
+  border-style: solid;
+  border-width: 0px 0px 75px 80px;
+  border-color: transparent transparent var(--light-grey) transparent;
+  border-top-left-radius: 15px;
+  outline: var(--grey);
+}
+.rect{
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3px;
+  width:100%;
+  background-color: var(--light-grey);
+  outline: var(--grey);
+}
+span > button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+}
+span > button:focus{
+  border-bottom: solid;
+  border-bottom-color: red;
+}
+#settings-slider-icon {
+  color: black;
 }
